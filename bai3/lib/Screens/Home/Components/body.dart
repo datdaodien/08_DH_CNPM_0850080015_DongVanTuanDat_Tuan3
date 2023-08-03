@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:bai3/constant.dart';
 
 class Body extends StatelessWidget {
+  const Body({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,7 +13,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           Text(
             "Burger".toUpperCase(),
-            style: Theme.of(context).textTheme.headline1?.copyWith(
+            style: Theme.of(context).textTheme.displayLarge?.copyWith(
                   color: kTextcolor,
                   fontWeight: FontWeight.bold,
                 ),
@@ -26,39 +28,39 @@ class Body extends StatelessWidget {
           FittedBox(
             // Now it just take the required spaces
             child: Container(
-              margin: EdgeInsets.symmetric(vertical: 20),
-              padding: EdgeInsets.all(15),
+              margin: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.all(15),
               decoration: BoxDecoration(
-                color: Color(0xFF372930),
+                color: const Color(0xFF372930),
                 borderRadius: BorderRadius.circular(34),
               ),
               child: Row(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     height: 38,
                     width: 38,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: kPrimaryColor,
                       shape: BoxShape.circle,
                     ),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xFF372930),
                         shape: BoxShape.circle,
                       ),
                     ),
                   ),
-                  SizedBox(width: 15),
+                  const SizedBox(width: 15),
                   Text(
                     "Get Started".toUpperCase(),
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 19,
                     ),
                   ),
-                  SizedBox(width: 15),
+                  const SizedBox(width: 15),
                 ],
               ),
             ),

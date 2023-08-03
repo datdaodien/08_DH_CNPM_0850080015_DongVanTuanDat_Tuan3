@@ -3,6 +3,8 @@ import 'package:bai3/Screens/Home/Components/app_bar.dart';
 import 'package:bai3/Screens/Home/Components/body.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -12,13 +14,13 @@ class HomeScreen extends StatelessWidget {
         height: size.height,
         // it will take full width
         width: size.width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/bg.png"),
             fit: BoxFit.cover,
           ),
         ),
-        child: Column(
+        child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             CustomAppBar(),
