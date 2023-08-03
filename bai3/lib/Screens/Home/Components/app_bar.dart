@@ -20,44 +20,46 @@ class CustomAppBar extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        children: <Widget>[
-          Image.asset(
-            "assets/images/logo.png",
-            height: 25,
-            alignment: Alignment.topCenter,
-          ),
-          SizedBox(width: 5),
-          Text(
-            "Foodi".toUpperCase(),
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-          ),
-          Spacer(),
-          MenuItem(
-            title: "Home",
-            press: () {},
-          ),
-          MenuItem(
-            title: "about",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Pricing",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Contact",
-            press: () {},
-          ),
-          MenuItem(
-            title: "Login",
-            press: () {},
-          ),
-          DefaultButton(
-            text: "Get Started",
-            press: () {},
-          ),
-        ],
+      child: ClipRect( // Thêm ClipRect ở đây
+        child: Row(
+          children: <Widget>[
+            Image.asset(
+              "assets/images/logo.png",
+              height: 25,
+              alignment: Alignment.topCenter,
+            ),
+            SizedBox(width: 5),
+            Text(
+              "Foodi".toUpperCase(),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+            Spacer(),
+            MenuItem(
+              title: "Home",
+              press: () {},
+            ),
+            MenuItem(
+              title: "about",
+              press: () {},
+            ),
+            MenuItem(
+              title: "Pricing",
+              press: () {},
+            ),
+            // MenuItem(
+            //   title: "Contact",
+            //   press: () {},
+            // ),
+            // MenuItem(
+            //   title: "Login",
+            //   press: () {},
+            // ),
+            // DefaultButton(
+            //   text: "Get Started",
+            //   press: () {},
+            // ),
+          ],
+        ),
       ),
     );
   }
